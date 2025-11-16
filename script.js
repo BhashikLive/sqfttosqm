@@ -16,10 +16,14 @@ const toUnit = document.getElementById('toUnit');
 const swapBtn = document.getElementById('swapBtn');
 const convertBtn = document.getElementById('convertBtn');
 const resultDisplay = document.getElementById('resultDisplay');
+const currentYear = document.getElementById('currentYear');
 
 // Initialize - perform initial conversion
 window.addEventListener('DOMContentLoaded', () => {
     convert();
+    if (currentYear) {
+        currentYear.textContent = new Date().getFullYear();
+    }
 });
 
 // Convert function
@@ -29,6 +33,7 @@ function convert() {
     if (isNaN(inputValue) || inputValue < 0) {
         toValue.value = '';
         resultDisplay.classList.remove('show');
+        resultDisplay.textContent = '';
         return;
     }
 
@@ -99,7 +104,6 @@ function swapUnits() {
 
 
 // Event Listeners
-fromValue.addEventListener('input', convert);
 fromUnit.addEventListener('change', convert);
 toUnit.addEventListener('change', convert);
 convertBtn.addEventListener('click', convert);
@@ -112,16 +116,12 @@ fromValue.addEventListener('keypress', (e) => {
     }
 });
 
-// Real-time conversion as user types
-fromValue.addEventListener('input', () => {
-    convert();
-});
-
-// Prevent negative values
+// Real-time conversion with validation
 fromValue.addEventListener('input', () => {
     if (fromValue.value < 0) {
         fromValue.value = Math.abs(fromValue.value);
     }
+    convert();
 });
 
 // Add smooth scroll behavior for better UX

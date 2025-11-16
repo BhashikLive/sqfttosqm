@@ -4,16 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Free Square Feet to Square Meters (sqft to sqm) Conversion Calculator. Fast, accurate, and easy to use. Convert sqft to sqm instantly with formulas, examples, and conversion tables.">
-    <meta name="keywords" content="sqft to sqm, square feet to square meters, sqft to sqm converter, area conversion, sqm to sqft, square meter conversion">
     <meta name="author" content="SqftToSqm.com">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2563eb">
     <link rel="canonical" href="https://sqfttosqm.com">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" type="image/png" href="icons/icon-192.png">
+    <link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="icons/icon-512.png">
     
     <!-- Open Graph Tags -->
     <meta property="og:title" content="Square Feet to Square Meters (sqft to sqm) Conversion Calculator">
     <meta property="og:description" content="Fast and accurate sqft to sqm converter. Convert square feet to square meters instantly with our free calculator.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://sqfttosqm.com">
+    <meta property="og:image" content="https://sqfttosqm.com/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="SqftToSqm Converter">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Square Feet to Square Meters (sqft to sqm) Conversion Calculator">
+    <meta name="twitter:description" content="Fast, accurate, and free area conversion calculator with tables, formulas, and FAQs.">
+    <meta name="twitter:image" content="https://sqfttosqm.com/assets/og-image.png">
     
     <title>Square Feet to Square Meters (sqft to sqm) Conversion Calculator</title>
     <link rel="stylesheet" href="styles.css">
@@ -60,7 +72,7 @@
     }
     </script>
     
-    <!-- Calculator Schema -->
+        <!-- Calculator Schema -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -69,7 +81,7 @@
       "url": "https://sqfttosqm.com",
       "description": "Free online calculator to convert square feet (sqft) to square meters (sqm) and other area units.",
       "applicationCategory": "UtilityApplication",
-      "operatingSystem": "Any",
+            "operatingSystem": "Web",
       "offers": {
         "@type": "Offer",
         "price": "0",
@@ -77,6 +89,21 @@
       }
     }
     </script>
+
+        <!-- Website Schema -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "SqftToSqm Converter",
+            "url": "https://sqfttosqm.com",
+            "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://sqfttosqm.com/?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }
+        }
+        </script>
 </head>
 <body>
     <header>
@@ -86,11 +113,25 @@
         </div>
     </header>
 
+        <nav class="page-nav" aria-label="Primary">
+                <div class="container nav-container">
+                        <a href="#calculator">Calculator</a>
+                        <a href="#formula">Formula</a>
+                        <a href="#examples">Examples</a>
+                        <a href="#sqft-table">Sqft → Sqm</a>
+                        <a href="#reverse">Sqm → Sqft</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="#quick-answers">Quick Answers</a>
+                        <a href="#insights">Insights</a>
+                        <a href="#about">About</a>
+                </div>
+        </nav>
+
     <main class="container">
         <!-- Main Content Area -->
         <div class="main-content">
         <!-- Calculator Section -->
-        <section class="calculator-section">
+                <section class="calculator-section" id="calculator">
             <div class="calculator-card">
                 <h2>Area Conversion Calculator</h2>
                 
@@ -111,7 +152,7 @@
                     </div>
 
                     <div class="swap-button">
-                        <button id="swapBtn" title="Swap units">⇄</button>
+                        <button id="swapBtn" title="Swap units" aria-label="Swap from and to units">⇄</button>
                     </div>
 
                     <div class="input-group">
@@ -132,12 +173,12 @@
                     <button id="convertBtn" class="convert-btn">Convert</button>
                 </div>
 
-                <div class="result-display" id="resultDisplay"></div>
+                <div class="result-display" id="resultDisplay" role="status" aria-live="polite"></div>
             </div>
         </section>
 
         <!-- Formula Section -->
-        <section class="content-section">
+        <section class="content-section" id="formula">
             <h2>Square Feet to Square Meters Conversion Formula</h2>
             <div class="formula-box">
                 <p class="formula"><strong>sqm = sqft × 0.092903</strong></p>
@@ -145,10 +186,11 @@
                 <p class="formula"><strong>sqm = sqft ÷ 10.764</strong></p>
             </div>
             <p>To convert square feet (sqft) to square meters (sqm), multiply the area value in square feet by 0.092903. This is the standard conversion factor recognized internationally.</p>
+            <p>Need official confirmation? See the <a href="https://www.nist.gov/pml/owm/metric-si/si-units-length" target="_blank" rel="noopener">National Institute of Standards and Technology guidance</a> on metric conversions.</p>
         </section>
 
         <!-- Examples Section -->
-        <section class="content-section">
+        <section class="content-section" id="examples">
             <h2>Conversion Examples: Square Feet to Square Meters</h2>
             <div class="examples-grid">
                 <div class="example-card">
@@ -175,7 +217,7 @@
         </section>
 
         <!-- Conversion Table -->
-        <section class="content-section">
+        <section class="content-section" id="sqft-table">
             <h2>Square Feet to Square Meters Conversion Table</h2>
             <div class="table-wrapper">
                 <table class="conversion-table">
@@ -205,7 +247,7 @@
         </section>
 
         <!-- Reverse Conversion -->
-        <section class="content-section">
+        <section class="content-section" id="reverse">
             <h2>Square Meters to Square Feet Conversion (Reverse)</h2>
             <div class="formula-box">
                 <p class="formula"><strong>sqft = sqm × 10.764</strong></p>
@@ -236,8 +278,50 @@
             </div>
         </section>
 
+        <!-- Insights Section -->
+        <section class="content-section insights-section" id="insights">
+            <h2>Real Estate & Construction Insights</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Is 1,000 sqft big?</h3>
+                    <p>A 1,000 square-foot home equals roughly 92.9 square meters. That comfortably fits two bedrooms, a kitchen, and a living room. In European listings you’ll see the same footprint advertised as a 93 sqm flat.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Common flooring orders</h3>
+                    <p>Flooring is usually sold in square meters internationally. If a contractor quotes 120 sqm of tile, that’s 1,291 sqft—knowing both numbers avoids over-ordering.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Land measurement equivalents</h3>
+                    <p>One acre is 43,560 sqft or 4,046.86 sqm. For smaller plots, 5 marla equals about 1,361 sqft (126.4 sqm), which helps when comparing regional listings.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Answers -->
+        <section class="content-section" id="quick-answers">
+            <h2>Quick Answers for Popular Searches</h2>
+            <div class="examples-grid">
+                <div class="example-card">
+                    <h3>300 sqft to sqm</h3>
+                    <p>300 × 0.092903 = <strong>27.87 sqm</strong>.</p>
+                </div>
+                <div class="example-card">
+                    <h3>1200 sqft to sqm</h3>
+                    <p>1200 ÷ 10.764 = <strong>111.48 sqm</strong>.</p>
+                </div>
+                <div class="example-card">
+                    <h3>50 sqm to sqft</h3>
+                    <p>50 × 10.764 = <strong>538.2 sqft</strong>.</p>
+                </div>
+                <div class="example-card">
+                    <h3>How many sqm in 3 marla?</h3>
+                    <p>Three marla is approximately <strong>68.0 sqm</strong> or 732 sqft, depending on the regional definition.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- FAQ Section -->
-        <section class="content-section faq-section">
+        <section class="content-section faq-section" id="faq">
             <h2>Frequently Asked Questions (FAQ)</h2>
             
             <div class="faq-item">
@@ -282,7 +366,7 @@
         </section>
 
         <!-- Additional Info -->
-        <section class="content-section">
+        <section class="content-section" id="about">
             <h2>About Square Feet and Square Meters</h2>
             <div class="info-grid">
                 <div class="info-card">
@@ -300,7 +384,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 SqftToSqm.com - Free Square Feet to Square Meters Conversion Calculator</p>
+            <p>&copy; <span id="currentYear"></span> SqftToSqm.com - Free Square Feet to Square Meters Conversion Calculator</p>
             <p>Fast, accurate, and easy area conversions for all your measurement needs.</p>
         </div>
     </footer>

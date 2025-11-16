@@ -1,0 +1,21 @@
+{
+  "name": "Sqft to Sqm Converter",
+  "short_name": "Sqft→Sqm",
+  "description": "Instant square feet to square meter conversion calculator with tables and FAQs.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2563eb",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "icons/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
