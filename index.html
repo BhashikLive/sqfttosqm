@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Square Feet to Square Meters (sqft to sqm) Conversion Calculator. Fast, accurate, and easy to use. Convert sqft to sqm instantly with formulas, examples, and conversion tables.">
+    <meta name="keywords" content="sqft to sqm, square feet to square meters, sqft to sqm converter, area conversion, sqm to sqft, square meter conversion">
+    <meta name="author" content="SqftToSqm.com">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://sqfttosqm.com">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Square Feet to Square Meters (sqft to sqm) Conversion Calculator">
+    <meta property="og:description" content="Fast and accurate sqft to sqm converter. Convert square feet to square meters instantly with our free calculator.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sqfttosqm.com">
+    
+    <title>Square Feet to Square Meters (sqft to sqm) Conversion Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do you convert square feet to square meters?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To convert square feet to square meters, multiply the area in square feet by 0.092903. The formula is: square meters = square feet × 0.092903. For example, 100 sqft = 100 × 0.092903 = 9.29 sqm."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the formula for sqft to sqm conversion?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The formula for converting square feet to square meters is: sqm = sqft × 0.092903. Alternatively, you can divide square feet by 10.764 to get square meters."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How many square meters in 1 square foot?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "1 square foot equals 0.092903 square meters. This is the standard conversion factor used worldwide."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you convert square meters to square feet?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To convert square meters to square feet, multiply the area in square meters by 10.764. The formula is: square feet = square meters × 10.764."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <!-- Calculator Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Square Feet to Square Meters Converter",
+      "url": "https://sqfttosqm.com",
+      "description": "Free online calculator to convert square feet (sqft) to square meters (sqm) and other area units.",
+      "applicationCategory": "UtilityApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Convert Square Feet (sqft) to Square Meters (sqm)</h1>
+            <p class="subtitle">Fast, accurate, and free area conversion calculator</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Main Content Area -->
+        <div class="main-content">
+        <!-- Calculator Section -->
+        <section class="calculator-section">
+            <div class="calculator-card">
+                <h2>Area Conversion Calculator</h2>
+                
+                <div class="converter">
+                    <div class="input-group">
+                        <label for="fromValue">From:</label>
+                        <div class="input-wrapper">
+                            <input type="number" id="fromValue" placeholder="Enter value" value="100" step="any">
+                            <select id="fromUnit">
+                                <option value="sqft" selected>Square Feet (sqft)</option>
+                                <option value="sqm">Square Meters (sqm)</option>
+                                <option value="sqyd">Square Yards</option>
+                                <option value="sqin">Square Inches</option>
+                                <option value="acre">Acres</option>
+                                <option value="hectare">Hectares</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="swap-button">
+                        <button id="swapBtn" title="Swap units">⇄</button>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="toValue">To:</label>
+                        <div class="input-wrapper">
+                            <input type="number" id="toValue" placeholder="Result" readonly>
+                            <select id="toUnit">
+                                <option value="sqft">Square Feet (sqft)</option>
+                                <option value="sqm" selected>Square Meters (sqm)</option>
+                                <option value="sqyd">Square Yards</option>
+                                <option value="sqin">Square Inches</option>
+                                <option value="acre">Acres</option>
+                                <option value="hectare">Hectares</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button id="convertBtn" class="convert-btn">Convert</button>
+                </div>
+
+                <div class="result-display" id="resultDisplay"></div>
+            </div>
+        </section>
+
+        <!-- Formula Section -->
+        <section class="content-section">
+            <h2>Square Feet to Square Meters Conversion Formula</h2>
+            <div class="formula-box">
+                <p class="formula"><strong>sqm = sqft × 0.092903</strong></p>
+                <p>Or alternatively:</p>
+                <p class="formula"><strong>sqm = sqft ÷ 10.764</strong></p>
+            </div>
+            <p>To convert square feet (sqft) to square meters (sqm), multiply the area value in square feet by 0.092903. This is the standard conversion factor recognized internationally.</p>
+        </section>
+
+        <!-- Examples Section -->
+        <section class="content-section">
+            <h2>Conversion Examples: Square Feet to Square Meters</h2>
+            <div class="examples-grid">
+                <div class="example-card">
+                    <h3>Example 1</h3>
+                    <p><strong>100 sqft to sqm</strong></p>
+                    <p>100 × 0.092903 = <strong>9.29 sqm</strong></p>
+                </div>
+                <div class="example-card">
+                    <h3>Example 2</h3>
+                    <p><strong>500 sqft to sqm</strong></p>
+                    <p>500 × 0.092903 = <strong>46.45 sqm</strong></p>
+                </div>
+                <div class="example-card">
+                    <h3>Example 3</h3>
+                    <p><strong>1000 sqft to sqm</strong></p>
+                    <p>1000 × 0.092903 = <strong>92.90 sqm</strong></p>
+                </div>
+                <div class="example-card">
+                    <h3>Example 4</h3>
+                    <p><strong>2000 sqft to sqm</strong></p>
+                    <p>2000 × 0.092903 = <strong>185.81 sqm</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conversion Table -->
+        <section class="content-section">
+            <h2>Square Feet to Square Meters Conversion Table</h2>
+            <div class="table-wrapper">
+                <table class="conversion-table">
+                    <thead>
+                        <tr>
+                            <th>Square Feet (sqft)</th>
+                            <th>Square Meters (sqm)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1 sqft</td><td>0.09 sqm</td></tr>
+                        <tr><td>10 sqft</td><td>0.93 sqm</td></tr>
+                        <tr><td>50 sqft</td><td>4.65 sqm</td></tr>
+                        <tr><td>100 sqft</td><td>9.29 sqm</td></tr>
+                        <tr><td>200 sqft</td><td>18.58 sqm</td></tr>
+                        <tr><td>500 sqft</td><td>46.45 sqm</td></tr>
+                        <tr><td>1,000 sqft</td><td>92.90 sqm</td></tr>
+                        <tr><td>1,500 sqft</td><td>139.35 sqm</td></tr>
+                        <tr><td>2,000 sqft</td><td>185.81 sqm</td></tr>
+                        <tr><td>2,500 sqft</td><td>232.26 sqm</td></tr>
+                        <tr><td>3,000 sqft</td><td>278.71 sqm</td></tr>
+                        <tr><td>5,000 sqft</td><td>464.52 sqm</td></tr>
+                        <tr><td>10,000 sqft</td><td>929.03 sqm</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Reverse Conversion -->
+        <section class="content-section">
+            <h2>Square Meters to Square Feet Conversion (Reverse)</h2>
+            <div class="formula-box">
+                <p class="formula"><strong>sqft = sqm × 10.764</strong></p>
+            </div>
+            <p>To convert square meters back to square feet, multiply the area in square meters by 10.764.</p>
+            
+            <h3>Square Meters to Square Feet Conversion Table</h3>
+            <div class="table-wrapper">
+                <table class="conversion-table">
+                    <thead>
+                        <tr>
+                            <th>Square Meters (sqm)</th>
+                            <th>Square Feet (sqft)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1 sqm</td><td>10.76 sqft</td></tr>
+                        <tr><td>5 sqm</td><td>53.82 sqft</td></tr>
+                        <tr><td>10 sqm</td><td>107.64 sqft</td></tr>
+                        <tr><td>20 sqm</td><td>215.28 sqft</td></tr>
+                        <tr><td>50 sqm</td><td>538.20 sqft</td></tr>
+                        <tr><td>100 sqm</td><td>1,076.39 sqft</td></tr>
+                        <tr><td>150 sqm</td><td>1,614.59 sqft</td></tr>
+                        <tr><td>200 sqm</td><td>2,152.78 sqft</td></tr>
+                        <tr><td>500 sqm</td><td>5,381.96 sqft</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="content-section faq-section">
+            <h2>Frequently Asked Questions (FAQ)</h2>
+            
+            <div class="faq-item">
+                <h3>How do you convert square feet to square meters?</h3>
+                <p>To convert square feet to square meters, multiply the area in square feet by 0.092903. The formula is: <strong>square meters = square feet × 0.092903</strong>. For example, 100 sqft = 100 × 0.092903 = 9.29 sqm.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What is the formula for sqft to sqm conversion?</h3>
+                <p>The formula for converting square feet to square meters is: <strong>sqm = sqft × 0.092903</strong>. Alternatively, you can divide square feet by 10.764 to get square meters (sqm = sqft ÷ 10.764).</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How many square meters in 1 square foot?</h3>
+                <p>1 square foot equals <strong>0.092903 square meters</strong>. This is the standard conversion factor used worldwide for converting between these two units of area measurement.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do you convert square meters to square feet?</h3>
+                <p>To convert square meters to square feet, multiply the area in square meters by 10.764. The formula is: <strong>square feet = square meters × 10.764</strong>. For example, 10 sqm = 10 × 10.764 = 107.64 sqft.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Why is sqft to sqm conversion important?</h3>
+                <p>Converting between square feet and square meters is essential for international real estate, construction, and architectural projects. While square feet are commonly used in the United States, square meters are the standard unit in most other countries and the metric system.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is this sqft to sqm calculator accurate?</h3>
+                <p>Yes, this calculator uses the precise conversion factor of 0.092903 to convert square feet to square meters, ensuring accurate results for all your area conversion needs.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I convert other area units besides sqft and sqm?</h3>
+                <p>Yes! Our calculator supports multiple area units including square feet, square meters, square yards, square inches, acres, and hectares. Simply select your desired units from the dropdown menus.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What are common uses for sqft to sqm conversion?</h3>
+                <p>Common uses include real estate listings, property measurements, flooring calculations, construction plans, interior design projects, land surveying, and comparing international property sizes.</p>
+            </div>
+        </section>
+
+        <!-- Additional Info -->
+        <section class="content-section">
+            <h2>About Square Feet and Square Meters</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Square Feet (sqft)</h3>
+                    <p>A square foot is a unit of area used primarily in the United States, United Kingdom, Canada, and other countries. One square foot is equal to the area of a square with sides measuring one foot (12 inches) in length.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Square Meters (sqm)</h3>
+                    <p>A square meter is the SI unit of area measurement used worldwide. One square meter equals the area of a square with sides measuring one meter in length. It's the standard unit in the metric system.</p>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SqftToSqm.com - Free Square Feet to Square Meters Conversion Calculator</p>
+            <p>Fast, accurate, and easy area conversions for all your measurement needs.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
