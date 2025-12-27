@@ -1,0 +1,301 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="✓ Free House Area Calculator 2025 - Calculate total house area, room sizes & construction area instantly! Get sqft, sqm, sqyd conversions. Try now!">
+    <meta name="keywords" content="house area calculator, construction calculator, home size calculator, room area calculator">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#2563eb">
+    <link rel="canonical" href="https://sqfttosqm.com/house-area-calculator.html">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="icon" type="image/png" href="icons/icon-192.png">
+    <title>Free House Area Calculator 2025 - Construction & Room Size Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <meta property="og:title" content="Free House Area Calculator 2025">
+    <meta property="og:description" content="Calculate house area, room sizes & construction area instantly! Free tool with multiple unit conversions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sqfttosqm.com/house-area-calculator.html">
+    <meta property="og:image" content="https://sqfttosqm.com/icons/icon-512.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Free House Area Calculator 2025">
+    <meta name="twitter:description" content="Calculate house & room sizes instantly!">
+    <meta name="twitter:image" content="https://sqfttosqm.com/icons/icon-512.png">
+    
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sqfttosqm.com"},{"@type":"ListItem","position":2,"name":"House Area Calculator","item":"https://sqfttosqm.com/house-area-calculator.html"}]}
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <h1><a href="index.html">SqftToSqm.com</a></h1>
+        </nav>
+    </header>
+
+    <main class="container">
+    <main class="container">
+        <!-- Two Column Layout -->
+        <div class="page-layout">
+            <!-- Left Sidebar -->
+            <aside class="calculators-sidebar">
+                <h2>All Calculators</h2>
+                <nav class="sidebar-nav">
+                    <a href="index.html" class="sidebar-link"><strong>sqft to sqm</strong><span>Square Feet to Meters</span></a>
+                    <a href="sqm-to-sqft.html" class="sidebar-link"><strong>sqm to sqft</strong><span>Square Meters to Feet</span></a>
+                    <a href="sqft-to-acres.html" class="sidebar-link"><strong>sqft to Acres</strong><span>Land measurement</span></a>
+                    <a href="acres-to-sqft.html" class="sidebar-link"><strong>Acres to sqft</strong><span>Reverse conversion</span></a>
+                    <a href="sqft-to-sqyd.html" class="sidebar-link"><strong>sqft to sqyd</strong><span>Square Feet to Yards (gaj)</span></a>
+                    <a href="sqyd-to-sqft.html" class="sidebar-link"><strong>sqyd to sqft</strong><span>Yards to Feet (gaj)</span></a>
+                    <a href="sqm-to-acres.html" class="sidebar-link"><strong>sqm to Acres</strong><span>Meters to Acres</span></a>
+                    <a href="acres-to-sqm.html" class="sidebar-link"><strong>Acres to sqm</strong><span>Acres to Meters</span></a>
+                    <a href="sqyd-to-sqm.html" class="sidebar-link"><strong>sqyd to sqm</strong><span>Yards to Meters</span></a>
+                    <a href="land-area-calculator.html" class="sidebar-link"><strong>Land Calculator</strong><span>Plot area calculator</span></a>
+                    <a href="house-area-calculator.html" class="sidebar-link active"><strong>House Calculator</strong><span>Room area calculator</span></a>
+                    <a href="carpet-vs-built-up-area.html" class="sidebar-link"><strong>Carpet vs Built-up</strong><span>RERA area guide</span></a>
+                </nav>
+            </aside>
+            <div class="main-content">
+        <div class="calculator-card"
+            <h1>House Area Calculator</h1>
+            
+            <div class="snippet-box">
+                <strong>Calculate Total House Area:</strong><br>
+                <code>Add all room areas + circulation space</code><br>
+                <small>Get carpet area, built-up area estimates</small>
+            </div>
+
+            <div id="roomsContainer">
+                <h3>Add Rooms</h3>
+                <div class="room-input" id="room1">
+                    <input type="text" placeholder="Room name" class="room-name" value="Living Room">
+                    <input type="number" placeholder="Length" class="room-length" value="20" min="0">
+                    <input type="number" placeholder="Width" class="room-width" value="15" min="0">
+                    <select class="room-unit">
+                        <option value="feet">feet</option>
+                        <option value="meters">meters</option>
+                    </select>
+                </div>
+            </div>
+
+            <button class="convert-btn" onclick="addRoom()" style="background: #6366f1; margin: 10px 5px;">+ Add Room</button>
+            <button class="convert-btn" onclick="calculateHouseArea()">Calculate Total Area</button>
+            
+            <div id="resultDisplay" class="result-display"></div>
+        </div>
+
+        <article class="content-section">
+            <h2>House Area Calculator - Plan Your Home</h2>
+            <p>This house area calculator helps you plan construction, estimate carpet area vs built-up area, and understand total house size for homes in <strong>India</strong>, <strong>UK</strong>, and <strong>US</strong>.</p>
+
+            <h3>Typical House Sizes</h3>
+            <div class="examples-grid">
+                <div class="example-card">
+                    <strong>600-900 sqft</strong>
+                    <p>1BHK apartment (India)</p>
+                </div>
+                <div class="example-card">
+                    <strong>900-1,200 sqft</strong>
+                    <p>2BHK apartment</p>
+                </div>
+                <div class="example-card">
+                    <strong>1,200-1,800 sqft</strong>
+                    <p>3BHK apartment</p>
+                </div>
+                <div class="example-card">
+                    <strong>2,000-3,000 sqft</strong>
+                    <p>Independent villa</p>
+                </div>
+            </div>
+
+            <h3>Standard Room Sizes (India)</h3>
+            <table class="conversion-table">
+                <thead>
+                    <tr>
+                        <th>Room Type</th>
+                        <th>Typical Size (sqft)</th>
+                        <th>Dimensions (feet)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Master Bedroom</td><td>150-200</td><td>12Ã—15 to 15Ã—15</td></tr>
+                    <tr><td>Bedroom</td><td>100-150</td><td>10Ã—12 to 12Ã—12</td></tr>
+                    <tr><td>Living Room</td><td>200-300</td><td>15Ã—15 to 20Ã—15</td></tr>
+                    <tr><td>Kitchen</td><td>80-120</td><td>8Ã—10 to 10Ã—12</td></tr>
+                    <tr><td>Bathroom</td><td>35-50</td><td>5Ã—7 to 7Ã—7</td></tr>
+                    <tr><td>Dining Room</td><td>100-150</td><td>10Ã—12 to 12Ã—12</td></tr>
+                </tbody>
+            </table>
+
+            <h2>Frequently Asked Questions (FAQs)</h2>
+            
+            <div class="faq-item">
+                <h3>How to calculate house construction area?</h3>
+                <p>Add all room areas (length Ã— width) including bedrooms, living room, kitchen, bathrooms. Then add <strong>15-20% for circulation</strong> (corridors, walls). For built-up area, add <strong>10-15% for walls and balconies</strong>.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What is a good size for a 3BHK?</h3>
+                <p>In <strong>India</strong>, a comfortable 3BHK is <strong>1,200-1,500 sqft</strong> (carpet area). In the <strong>US</strong>, 3-bedroom houses average <strong>1,600-2,000 sqft</strong>. <strong>UK</strong> 3-bed houses typically range from <strong>1,100-1,400 sqft</strong>.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How much area is lost to walls?</h3>
+                <p>Typically <strong>10-15%</strong> of built-up area is walls. If your carpet area is 1,000 sqft, built-up area will be around 1,150 sqft. External walls are thicker (9-12 inches), internal walls are thinner (4-6 inches).</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What is circulation area?</h3>
+                <p>Circulation area includes corridors, passages, staircase, and entrance areas. Add <strong>10-20% to total room area</strong> for circulation. Larger homes need more circulation space.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Minimum room sizes in India?</h3>
+                <p><strong>Master bedroom:</strong> Min 120 sqft, <strong>Other bedrooms:</strong> Min 80 sqft, <strong>Kitchen:</strong> Min 60 sqft, <strong>Bathroom:</strong> Min 30 sqft. These are NBC (National Building Code) minimums for habitable rooms.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How to calculate for multi-story house?</h3>
+                <p>Calculate each floor separately, then add together. First floor might have living room, kitchen, 1 bedroom. Second floor might have 2-3 bedrooms. Add staircase area to both floors.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Difference between carpet and super built-up?</h3>
+                <p><strong>Carpet area:</strong> Usable floor space. <strong>Super built-up:</strong> Includes walls, balconies, and share of common areas (20-30% more). See our <a href="carpet-vs-built-up-area.html">detailed guide</a>.</p>
+            </div>
+
+            <h2>Related Calculators</h2>
+            <div class="related-links">
+                <a href="carpet-vs-built-up-area.html" class="related-card">
+                    <h3>Carpet vs Built-up</h3>
+                    <p>Understand area types</p>
+                </a>
+                <a href="land-area-calculator.html" class="related-card">
+                    <h3>Land Calculator</h3>
+                    <p>Calculate plot size</p>
+                </a>
+                <a href="index.html" class="related-card">
+                    <h3>sqft to sqm</h3>
+                    <p>Convert measurements</p>
+                </a>
+            </div>
+        </article>
+        </div></div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear">2025</span> SqftToSqm.com</p>
+        </div>
+    </footer>
+
+    <script>
+        let roomCount = 1;
+        
+        function addRoom() {
+            roomCount++;
+            const container = document.getElementById('roomsContainer');
+            const newRoom = document.createElement('div');
+            newRoom.className = 'room-input';
+            newRoom.id = `room${roomCount}`;
+            newRoom.innerHTML = `
+                <input type="text" placeholder="Room name" class="room-name">
+                <input type="number" placeholder="Length" class="room-length" min="0">
+                <input type="number" placeholder="Width" class="room-width" min="0">
+                <select class="room-unit">
+                    <option value="feet">feet</option>
+                    <option value="meters">meters</option>
+                </select>
+                <button onclick="removeRoom('room${roomCount}')" style="background: #dc2626; padding: 8px 12px; border: none; border-radius: 4px; color: white; cursor: pointer;">Ã—</button>
+            `;
+            container.appendChild(newRoom);
+        }
+        
+        function removeRoom(roomId) {
+            document.getElementById(roomId).remove();
+        }
+        
+        function calculateHouseArea() {
+            const rooms = document.querySelectorAll('.room-input');
+            let totalSqft = 0;
+            let roomDetails = [];
+            
+            rooms.forEach(room => {
+                const name = room.querySelector('.room-name').value || 'Room';
+                const length = parseFloat(room.querySelector('.room-length').value);
+                const width = parseFloat(room.querySelector('.room-width').value);
+                const unit = room.querySelector('.room-unit').value;
+                
+                if (!isNaN(length) && !isNaN(width) && length > 0 && width > 0) {
+                    let areaSqft = length * width;
+                    if (unit === 'meters') {
+                        areaSqft = areaSqft * 10.764;
+                    }
+                    totalSqft += areaSqft;
+                    roomDetails.push({ name, area: areaSqft });
+                }
+            });
+            
+            if (totalSqft === 0) {
+                document.getElementById('resultDisplay').textContent = 'Please enter valid dimensions';
+                return;
+            }
+            
+            const carpetArea = totalSqft;
+            const circulationArea = totalSqft * 0.15;
+            const totalWithCirculation = carpetArea + circulationArea;
+            const builtUpArea = totalWithCirculation * 1.12;
+            const superBuiltUpArea = builtUpArea * 1.25;
+            
+            let detailsHTML = '<h3>Room Breakdown:</h3>';
+            roomDetails.forEach(room => {
+                detailsHTML += `<p><strong>${room.name}:</strong> ${room.area.toFixed(0)} sqft (${(room.area * 0.092903).toFixed(1)} sqm)</p>`;
+            });
+            
+            const resultsHTML = `
+                ${detailsHTML}
+                <hr style="margin: 15px 0;">
+                <h3>Total Areas:</h3>
+                <p><strong>Total Room Area:</strong> ${carpetArea.toFixed(0)} sqft</p>
+                <p><strong>+ Circulation (15%):</strong> ${circulationArea.toFixed(0)} sqft</p>
+                <p><strong>Carpet Area:</strong> ${totalWithCirculation.toFixed(0)} sqft (${(totalWithCirculation * 0.092903).toFixed(1)} sqm)</p>
+                <p><strong>Built-up Area (est):</strong> ${builtUpArea.toFixed(0)} sqft (includes walls)</p>
+                <p><strong>Super Built-up (est):</strong> ${superBuiltUpArea.toFixed(0)} sqft (includes common areas)</p>
+                <p style="margin-top: 15px; color: #059669;"><strong>Recommended plot size: ${(totalWithCirculation * 2).toFixed(0)} sqft for ground coverage</strong></p>
+            `;
+            
+            document.getElementById('resultDisplay').innerHTML = resultsHTML;
+            document.getElementById('resultDisplay').classList.add('show');
+        }
+        
+        window.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
+    </script>
+    
+    <style>
+        .room-input {
+            display: flex;
+            gap: 10px;
+            margin: 10px 0;
+            align-items: center;
+        }
+        .room-input input, .room-input select {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .room-name {
+            flex: 2;
+        }
+        .room-length, .room-width {
+            flex: 1;
+        }
+        .room-unit {
+            flex: 1;
+        }
+    </style>
+</body>
+</html>
+

@@ -88,6 +88,9 @@ function displayResult(input, fromUnit, output, toUnit) {
 
     resultDisplay.innerHTML = `${formatNumber(input)} ${unitNames[fromUnit]} = <strong>${output} ${unitNames[toUnit]}</strong>`;
     resultDisplay.classList.add('show');
+    
+    // Track the conversion event
+    trackConversion(fromUnit, toUnit);
 }
 
 // Swap units
@@ -124,12 +127,14 @@ fromValue.addEventListener('input', () => {
     convert();
 });
 
-// Add smooth scroll behavior for better UX
+// Smooth scroll behavior and section tracking
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
+            const sectionName = target.id || 'unknown';
+            trackSectionView(sectionName);
             target.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
@@ -138,14 +143,23 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Track conversion for analytics (optional - can be connected to Google Analytics)
+// Track conversion for analytics
 function trackConversion(fromUnit, toUnit) {
-    // Placeholder for analytics tracking
     if (typeof gtag !== 'undefined') {
-        gtag('event', 'conversion', {
+        gtag('event', 'area_conversion', {
             'event_category': 'calculator',
             'event_label': `${fromUnit}_to_${toUnit}`,
             'value': 1
+        });
+    }
+}
+
+// Track page section views
+function trackSectionView(sectionName) {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'page_section_view', {
+            'event_category': 'engagement',
+            'event_label': sectionName
         });
     }
 }
